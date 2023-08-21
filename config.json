@@ -1,0 +1,26 @@
+{
+    "mock_ca": {
+        "certificates": "/home/mdeangelo/projects/est/est/certs/cabundle.pem",
+        "private_key": "/home/mdeangelo/projects/est/est/certs/ca-privatekey.pem"
+    },
+    "tls": {
+        "listen_address": "192.168.40.211:8443",
+        "certificates": "/home/mdeangelo/projects/est/est/certs/server-bundle.pem",
+        "private_key": "/home/mdeangelo/projects/est/est/certs/server-key.pem",
+	"client_cas": [
+            "/home/mdeangelo/projects/est/est/certs/rootca.pem"
+        ]
+    },
+    "allowed_hosts": [
+        "localhost",
+        "127.0.0.1",
+        "192.168.40.4",
+	"192.168.40.211",
+        "[::1]"
+    ],
+    "healthcheck_password": "pass",
+    "rate_limit": 150,
+    "timeout": 30
+}
+
+
